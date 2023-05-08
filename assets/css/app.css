@@ -24,4 +24,115 @@
           justify-content: center;
   color: #fff;
 }
+
+.container .chatbox {
+  background: #1d61c2;
+  width: 60%;
+  min-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .chatbox .msg-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+}
+
+.container .chatbox .msg-row .msg-text {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 8px;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  font-weight: 300;
+}
+
+.container .chatbox .msg-row .msg-text h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.container .chatbox .msg-row .msg-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.container .chatbox .msg-row.msg-row2 {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .col-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .col-1 input {
+  border: 0;
+  outline: none;
+  padding: 20px 40px;
+  background-color: #3874c9;
+  color: #f1f1f1;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300px;
+}
+
+.container .col-2 {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  background: #3874c9;
+}
+
+.container .col-2 h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+}
+
+.container .col-2 ul {
+  list-style: none;
+  padding: 30px;
+}
+
+.container .col-2 ul li {
+  padding: 5px 0;
+}
+
+.container .col-2 ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: #f1f1f1;
+}
+
+:-ms-input-placeholder {
+  color: #f1f1f1;
+}
+
+::-ms-input-placeholder {
+  color: #f1f1f1;
+}
+
+::placeholder {
+  color: #f1f1f1;
+}
 /*# sourceMappingURL=app.css.map */
