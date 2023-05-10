@@ -68,6 +68,11 @@
       font-size: 16px;
       font-weight: 300px;
     }
+
+    .messages {
+      overflow-y: scroll;
+      height: 85%;
+    }
   }
   .col-2 {
     flex-basis: 250px;

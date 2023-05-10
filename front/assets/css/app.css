@@ -89,6 +89,11 @@
   font-weight: 300px;
 }
 
+.container .col-1 .messages {
+  overflow-y: scroll;
+  height: 85%;
+}
+
 .container .col-2 {
   -ms-flex-preferred-size: 250px;
       flex-basis: 250px;
