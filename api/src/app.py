@@ -1,23 +1,11 @@
 from flask import Flask
-import json
+from flask_sqlalchemy import SQLAlchemy
+from config import get_config
 
-from models.user import User
+db = SQLAlchemy()
 
-app = Flask(__name__)
-
-user = User()
-
-# index route
-@app.route('/', methods=['GET'])
-def index():
-    return "Bienvenue dans notre application de messagerie (partie API)"
-
-# login route
-@app.post('/api/login')
-def login_user():
-    result = user.login()
-    return json.dumps(result)
-
-
-if __name__ == "__main__":
-    app.run()
+def create_app(env=None): 
+    app = Flask(__name__)
+    app.config.from_object(get_config(env))
+    db.init_app(app)
+    return app
