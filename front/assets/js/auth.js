@@ -3,7 +3,7 @@ $(document).ready(() => {
     let $username = localStorage.getItem("username");
 
     if ($username) {
-      $(location).prop("href", "/index.html");
+      $(location).prop("href", "/chat.html");
     }
   });
 
@@ -25,7 +25,7 @@ $(document).ready(() => {
       data: JSON.stringify(data),
       success: (data) => {
         localStorage.setItem("username", data.username);
-        $(location).prop("href", "index.html");
+        $(location).prop("href", "chat.html");
       },
       error: (xhr, status, error) => {
         console.error("Erreur AJAX : " + status + " - " + error);
