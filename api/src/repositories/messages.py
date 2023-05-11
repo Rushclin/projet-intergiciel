@@ -34,4 +34,5 @@ class  MessageRepository:
                 "message": message.message, 
                 "date_created": str(message.date_created), 
             })
+        Message.commit()
         return result

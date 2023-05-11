@@ -18,12 +18,12 @@ class MessagePost(Resource):
         username: str = request_json['username']
         message: str = request_json['message']
         try:
-            messages = MessageRepository.create(
-                username, 
-                message
+            messages = MessageRepository.create( 
+                message, 
+                username
             )
             return messages, 200
         except Exception as e: 
-            response = jsonify(e.to_dict())
+            response = jsonify(e)
             response.status_code = e.status_code 
             return response

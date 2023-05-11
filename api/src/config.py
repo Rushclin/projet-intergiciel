@@ -20,6 +20,7 @@ class Config(object):
 
     API_PAGINATION_PER_PAGE = 10
 
+
 class DevelopmentConfig(Config):
     DEBUG = True
 
